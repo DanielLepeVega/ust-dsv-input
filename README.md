@@ -6,8 +6,8 @@ Basic angular, node, input app
 ### Clone the repo
 
 ```shell
-git clone https://github.com/bryanforbes/intern-angular
-cd intern-angular
+git clone https://github.com/DanielLepeVega/ust-dsv-input
+cd myApp
 ```
 
 ### Install npm packages
