@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { CodeModule } from './code.module';
+
+import { HttpClientModule } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { DataComponent } from './data/data.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +22,7 @@ import { CodeModule } from './code.module';
     MatSlideToggleModule,
     MatInputModule,
     MatButtonModule,
-    CodeModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,4 +7,8 @@ import response from './data.json';
 })
 export class AppComponent {
   title = "DanielLepeVegaInputApp";
+  public displayData(){
+    this.show = true;
+  }
+  public show = false;
 }

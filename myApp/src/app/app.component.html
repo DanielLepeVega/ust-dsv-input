@@ -333,10 +333,10 @@
         <input matInput placeholder="Example id: 15577000" value="id">
       </mat-form-field>
     </form>
-    <button mat-raised-button color="primary">Submit</button>
+    <button mat-raised-button color="primary" id="buttonSubmit" (click)="displayData()">Submit</button>
   </div>
 
-  <code-block></code-block>
+  <app-data *ngIf="show"></app-data>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>
