@@ -1,45 +1,31 @@
 {
-    "serverStack": "string",
-    "infoMessage": "string",
-    "errorMessage": "string",
-    "message": "string",
-    "status": "OK",
+    "serverStack": null,
+    "infoMessage": null,
+    "errorMessage": null,
+    "message": null,
+    "status": null,
     "object": [
       {
-        "paynumber": "string",
-        "status": "string",
-        "actualPickupDate": "2022-12-21T18:38:12.344Z",
-        "actualDeliveryDate": "2022-12-21T18:38:12.344Z",
-        "originCity": "string",
-        "destinationCity": "string",
-        "searchCriteria": "string",
-        "trackingComments": [
-          {
-            "comment": "string",
-            "user": "string",
-            "timestamp": "2022-12-21T18:38:12.344Z",
-            "dateTime": "2022-12-21T18:38:12.344Z"
-          }
-        ]
+        "paynumber": "15577000",
+        "status": "Invoiced",
+        "actualPickupDate": "2022-12-16T13:30:00.000-08:00",
+        "actualDeliveryDate": "2022-12-21T10:00:00.000-08:00",
+        "originCity": "GARDENA, CA",
+        "destinationCity": "HEBRON, KY",
+        "searchCriteria": "15577000",
+        "trackingComments": []
       }
     ],
     "items": [
       {
-        "paynumber": "string",
-        "status": "string",
-        "actualPickupDate": "2022-12-21T18:38:12.344Z",
-        "actualDeliveryDate": "2022-12-21T18:38:12.344Z",
-        "originCity": "string",
-        "destinationCity": "string",
-        "searchCriteria": "string",
-        "trackingComments": [
-          {
-            "comment": "string",
-            "user": "string",
-            "timestamp": "2022-12-21T18:38:12.344Z",
-            "dateTime": "2022-12-21T18:38:12.344Z"
-          }
-        ]
+        "paynumber": "15577000",
+        "status": "Invoiced",
+        "actualPickupDate": "2022-12-16T13:30:00.000-08:00",
+        "actualDeliveryDate": "2022-12-21T10:00:00.000-08:00",
+        "originCity": "GARDENA, CA",
+        "destinationCity": "HEBRON, KY",
+        "searchCriteria": "15577000",
+        "trackingComments": []
       }
     ]
   }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import response from './data.json';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -65,12 +66,12 @@ import { Component } from '@angular/core';
               </span><span>      </span><span class="hljs-attr">"originCity"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{originCity}}</span><span>,
               </span><span>      </span><span class="hljs-attr">"destinationCity"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{destinationCity}}</span><span>,
               </span><span>      </span><span class="hljs-attr">"searchCriteria"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{searchCriteria}}</span><span>,
-              </span><span>      </span><span class="hljs-attr">"trackingComments"</span><span>: '['
+              </span><span>      </span><span class="hljs-attr">"trackingComments"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{trackingComments}}</span><span>,'['
               </span>        'C'
-              <span>          </span><span class="hljs-attr">"comment"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{comment}}</span><span>,
-              </span><span>          </span><span class="hljs-attr">"user"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{user}}</span><span>,
-              </span><span>          </span><span class="hljs-attr">"timestamp"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{timestamp}}</span><span>,
-              </span><span>          </span><span class="hljs-attr">"dateTime"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{dateTime}}</span><span>
+              <span>          </span><span class="hljs-attr">"comment"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{comment_object}}</span><span>,
+              </span><span>          </span><span class="hljs-attr">"user"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{user_object}}</span><span>,
+              </span><span>          </span><span class="hljs-attr">"timestamp"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{timestamp_object}}</span><span>,
+              </span><span>          </span><span class="hljs-attr">"dateTime"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{dateTime_object}}</span><span>
               </span>        '}'
                     ']'
                   '}'
@@ -84,7 +85,7 @@ import { Component } from '@angular/core';
               </span><span>      </span><span class="hljs-attr">"originCity"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{originCity_items}}</span><span>,
               </span><span>      </span><span class="hljs-attr">"destinationCity"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{destinationCity_items}}</span><span>,
               </span><span>      </span><span class="hljs-attr">"searchCriteria"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{searchCriteria_items}}</span><span>,
-              </span><span>      </span><span class="hljs-attr">"trackingComments"</span><span>: '['
+              </span><span>      </span><span class="hljs-attr">"trackingComments"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{trackingComments_items}}</span><span>,'['
               </span>        'C'
               <span>          </span><span class="hljs-attr">"comment"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{comment_items}}</span><span>,
               </span><span>          </span><span class="hljs-attr">"user"</span><span>: </span><span style="color: rgb(162, 252, 162);">{{user_items}}</span><span>,
@@ -107,33 +108,37 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DanielLepeVegaInputApp';
-  serverStack = ;
-  infoMessage = ;
-  errorMessage = ;
-  message = ;
-  status = ;
-  paynumber = ;
-  status_pay = ;
-  actualPickupDate = ;
-  actualDeliveryDate = ;
-  originCity = ;
-  destinationCity = ;
-  searchCriteria = ;
-  trackingComments = ;
-  comment = ;
-  user = ;
-  timestamp = ;
-  datetime = ;
-  paynumber_items = ;
-  status_items = ;
-  actualPickupDate_items = ;
-  actualDeliveryDate_items = ;
-  originCity_items = ;
-  destinationCity_items = ;
-  searchCriteria_items = ;
-  trackingComments_items = ;
-  comment_items = ;
-  user_items = ;
-  timestamp_items = ;
-  dateTime_items = ;
+  serverStack = response.serverStack;
+  infoMessage = response.infoMessage;
+  errorMessage = response.errorMessage;
+  message = response.message;
+  status = response.status;
+
+  paynumber = response.object[0];
+  status_pay = response.object[1];
+  actualPickupDate = response.object[2];
+  actualDeliveryDate = response.object[3];
+  originCity = response.object[4];
+  destinationCity = response.object[5];
+  searchCriteria = response.object[6];
+  trackingComments = response.object[7];
+
+  comment_object = 'string';
+  user_object = 'string';
+  timestamp_object = 'string';
+  dateTime_object = 'string';
+
+  paynumber_items = response.items[0];
+  status_items = response.items[1];
+  actualPickupDate_items = response.items[2];
+  actualDeliveryDate_items = response.items[3];
+  originCity_items = response.items[4];
+  destinationCity_items = response.items[5];
+  searchCriteria_items = response.items[6];
+  trackingComments_items = response.items[7];
+
+  comment_items = 'string';
+  user_items = 'string';
+  timestamp_items = 'string';
+  dateTime_items = 'string';
 }
