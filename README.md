@@ -1,5 +1,7 @@
 # ust-dsv-input
-Basic angular, node, input app
+Basic angular, node, input app.
+All the data is fake, the data is retrieved from a fake json server, with a dev api.
+This is the link for the mock json server: https://mockapi.io/projects/63a4c976821953d4f2bcd1ec
 
 ## Get started
 
