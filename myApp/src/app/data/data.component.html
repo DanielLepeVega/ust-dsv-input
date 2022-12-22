@@ -1,0 +1,181 @@
+<div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      
+        <!-- serverStack Column -->
+        <ng-container matColumnDef="serverStack">
+          <th mat-header-cell *matHeaderCellDef> Server Stack </th>
+          <td mat-cell *matCellDef="let element"> {{element.serverStack}} </td>
+        </ng-container>
+      
+        <!-- infoMessage Column -->
+        <ng-container matColumnDef="infoMessage">
+          <th mat-header-cell *matHeaderCellDef> Message Information </th>
+          <td mat-cell *matCellDef="let element"> {{element.infoMessage}} </td>
+        </ng-container>
+      
+        <!-- errorMessage Column -->
+        <ng-container matColumnDef="errorMessage">
+          <th mat-header-cell *matHeaderCellDef> Error Message </th>
+          <td mat-cell *matCellDef="let element"> {{element.errorMessage}} </td>
+        </ng-container>
+      
+        <!-- message Column -->
+        <ng-container matColumnDef="message">
+          <th mat-header-cell *matHeaderCellDef> Message </th>
+          <td mat-cell *matCellDef="let element"> {{element.message}} </td>
+        </ng-container>
+      
+        <!-- status Column -->
+        <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+        </ng-container>
+
+        <!-- paynumber Column -->
+        <ng-container matColumnDef="paynumber">
+            <th mat-header-cell *matHeaderCellDef> Paynumber </th>
+            <td mat-cell *matCellDef="let element"> {{element.paynumber}} </td>
+        </ng-container>
+
+        <!-- status_pay Column -->
+        <ng-container matColumnDef="status_pay">
+            <th mat-header-cell *matHeaderCellDef> Pay Status</th>
+            <td mat-cell *matCellDef="let element"> {{element.status_pay}} </td>
+        </ng-container>
+
+        <!-- actualPickupDate Column -->
+        <ng-container matColumnDef="actualPickupDate">
+            <th mat-header-cell *matHeaderCellDef> Actual Pickup Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.actualPickupDate}} </td>
+        </ng-container>
+
+        <!-- actualDeliveryDate Column -->
+        <ng-container matColumnDef="actualDeliveryDate">
+            <th mat-header-cell *matHeaderCellDef> Actual Delivery Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.actualDeliveryDate}} </td>
+        </ng-container>
+
+        <!-- originCity Column -->
+        <ng-container matColumnDef="originCity">
+            <th mat-header-cell *matHeaderCellDef> Origin City </th>
+            <td mat-cell *matCellDef="let element"> {{element.originCity}} </td>
+        </ng-container>
+
+        <!-- destinationCity Column -->
+        <ng-container matColumnDef="destinationCity">
+            <th mat-header-cell *matHeaderCellDef> Destination City </th>
+            <td mat-cell *matCellDef="let element"> {{element.destinationCity}} </td>
+        </ng-container>
+
+        <!-- searchCriteria Column -->
+        <ng-container matColumnDef="searchCriteria">
+            <th mat-header-cell *matHeaderCellDef> Search Criteria </th>
+            <td mat-cell *matCellDef="let element"> {{element.searchCriteria}} </td>
+        </ng-container>
+
+        <!-- trackingComments Column -->
+        <ng-container matColumnDef="trackingComments">
+            <th mat-header-cell *matHeaderCellDef> Tracking Comments </th>
+            <td mat-cell *matCellDef="let element"> {{element.trackingComments}} </td>
+        </ng-container>
+
+        <!-- comment_object Column -->
+        <ng-container matColumnDef="comment_object">
+            <th mat-header-cell *matHeaderCellDef> Comment </th>
+            <td mat-cell *matCellDef="let element"> {{element.comment_object}} </td>
+        </ng-container>
+
+        <!-- user_object Column -->
+        <ng-container matColumnDef="user_object">
+            <th mat-header-cell *matHeaderCellDef> User </th>
+            <td mat-cell *matCellDef="let element"> {{element.user_object}} </td>
+        </ng-container>
+
+        <!-- timestamp_object Column -->
+        <ng-container matColumnDef="timestamp_object">
+            <th mat-header-cell *matHeaderCellDef> Timestamp </th>
+            <td mat-cell *matCellDef="let element"> {{element.timestamp_object}} </td>
+        </ng-container>
+
+        <!-- dateTime_object Column -->
+        <ng-container matColumnDef="dateTime_object">
+            <th mat-header-cell *matHeaderCellDef> Date Time </th>
+            <td mat-cell *matCellDef="let element"> {{element.dateTime_object}} </td>
+        </ng-container>
+
+        <!-- paynumber_items Column -->
+        <ng-container matColumnDef="paynumber_items">
+            <th mat-header-cell *matHeaderCellDef> Paynumber </th>
+            <td mat-cell *matCellDef="let element"> {{element.paynumber_items}} </td>
+        </ng-container>
+
+        <!-- status_items Column -->
+        <ng-container matColumnDef="status_items">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let element"> {{element.status_items}} </td>
+        </ng-container>
+
+        <!-- actualPickupDate_items Column -->
+        <ng-container matColumnDef="actualPickupDate_items">
+            <th mat-header-cell *matHeaderCellDef> Actual Pickup Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.actualPickupDate_items}} </td>
+        </ng-container>
+
+        <!-- actualDeliveryDate_items Column -->
+        <ng-container matColumnDef="actualDeliveryDate_items">
+            <th mat-header-cell *matHeaderCellDef> Actual Delivery Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.actualDeliveryDate_items}} </td>
+        </ng-container>
+
+        <!-- originCity_items Column -->
+        <ng-container matColumnDef="originCity_items">
+            <th mat-header-cell *matHeaderCellDef> Origin City </th>
+            <td mat-cell *matCellDef="let element"> {{element.originCity_items}} </td>
+        </ng-container>
+
+        <!-- destinationCity_items Column -->
+        <ng-container matColumnDef="destinationCity_items">
+            <th mat-header-cell *matHeaderCellDef> Destination City </th>
+            <td mat-cell *matCellDef="let element"> {{element.destinationCity_items}} </td>
+        </ng-container>
+
+        <!-- searchCriteria_items Column -->
+        <ng-container matColumnDef="searchCriteria_items">
+            <th mat-header-cell *matHeaderCellDef> Search Criteria </th>
+            <td mat-cell *matCellDef="let element"> {{element.searchCriteria_items}} </td>
+        </ng-container>
+
+        <!-- trackingComments_items Column -->
+        <ng-container matColumnDef="trackingComments_items">
+            <th mat-header-cell *matHeaderCellDef> Tracking Comments </th>
+            <td mat-cell *matCellDef="let element"> {{element.trackingComments_items}} </td>
+        </ng-container>
+
+        <!-- comment_items Column -->
+        <ng-container matColumnDef="comment_items">
+            <th mat-header-cell *matHeaderCellDef> Comment </th>
+            <td mat-cell *matCellDef="let element"> {{element.comment_items}} </td>
+        </ng-container>
+
+        <!-- user_items Column -->
+        <ng-container matColumnDef="user_items">
+            <th mat-header-cell *matHeaderCellDef> User </th>
+            <td mat-cell *matCellDef="let element"> {{element.user_items}} </td>
+        </ng-container>
+
+        <!-- timestamp_items Column -->
+        <ng-container matColumnDef="timestamp_items">
+            <th mat-header-cell *matHeaderCellDef> Timestamp </th>
+            <td mat-cell *matCellDef="let element"> {{element.timestamp_items}} </td>
+        </ng-container>
+
+        <!-- dateTime_items Column -->
+        <ng-container matColumnDef="dateTime_items">
+            <th mat-header-cell *matHeaderCellDef> Date Time </th>
+            <td mat-cell *matCellDef="let element"> {{element.dateTime_items}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+</div>
