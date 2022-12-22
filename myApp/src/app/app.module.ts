@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { CodeModule } from './code.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     MatSlideToggleModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    CodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

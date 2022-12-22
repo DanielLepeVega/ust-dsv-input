@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import response from './data.json';
 @Component({
-  selector: 'app-root',
-  templateUrl: './code.component.html'
+    selector: 'code-block',
+    templateUrl: './code.component.html'
 })
 
 export class CodeComponent {
