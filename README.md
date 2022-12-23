@@ -1,5 +1,10 @@
 # ust-dsv-input
 Basic angular, node, input app.
+
+I was able to display all the data, didn't have enough time to display one item because of personal reasons (Christmass).
+
+If you want to check the attemp on looking for one id, take a look at the data-id folder.
+
 All the data is fake, the data is retrieved from a fake json server, with a dev api.
 This is the link for the mock json server: https://mockapi.io/projects/63a4c976821953d4f2bcd1ec
 
