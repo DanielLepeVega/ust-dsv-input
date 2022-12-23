@@ -330,13 +330,13 @@
   <div>
     <form class="form">
       <mat-form-field class="full-width">
-        <input matInput placeholder="Example id: 15577000" value="id">
+        <input matInput placeholder="Example id: 15577000" value="id" id="input_id">
       </mat-form-field>
     </form>
-    <button mat-raised-button color="primary" id="buttonSubmit" (click)="displayData()">Submit</button>
+    <button mat-raised-button color="primary" id="buttonSubmit" (click)="displayData()">Display All Data</button>
   </div>
 
-  <app-data *ngIf="show"></app-data>
+  <app-data *ngIf="showAll"></app-data>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>
